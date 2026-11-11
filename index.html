@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1151108 花蓮夢N｜AI導入教學實作與Agent研習資源網</title>
-  <meta name="description" content="1151108 花蓮夢N 教師專業成長研習：做AI的主人、生活科技AI小宮燈、Agent技能樹、AI導入實作資源與全卡片一鍵複製庫。">
+  <meta name="description" content="1151108 花蓮夢N 教師專業成長研習：做AI的主人、生活科技AI小宮燈、Agent技能樹、AI導入實作資源與全138張卡片一鍵複製庫。">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -85,7 +85,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    /* Custom scrollbar */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -112,18 +111,15 @@
   <!-- ==================== PASSWORD GATE OVERLAY ==================== -->
   <div id="passwordGate" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/95 backdrop-blur-2xl transition-all duration-500">
     <div class="relative w-full max-w-md p-8 glass-card rounded-3xl border border-slate-700/60 shadow-2xl overflow-hidden" id="gateCard">
-      <!-- Ambient decorative lights -->
       <div class="absolute -top-24 -left-24 w-48 h-48 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="relative z-10 text-center">
-        <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-3 py-1 mb-5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
           花蓮夢N 研習專用通道
         </div>
 
-        <!-- Lock Icon with Glow -->
         <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-tr from-emerald-500/20 via-teal-500/20 to-indigo-500/20 border border-emerald-500/30 flex items-center justify-center shadow-lg shadow-emerald-500/10">
           <i class="fa-solid fa-shield-halved text-3xl text-emerald-400"></i>
         </div>
@@ -133,7 +129,6 @@
           歡迎蒞臨 <span class="text-emerald-400 font-medium">1151108 花蓮夢N</span><br>請輸入大會工作坊通關密碼解鎖教材
         </p>
 
-        <!-- Form -->
         <form id="loginForm" onsubmit="handleUnlock(event)" class="space-y-4">
           <div class="relative">
             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
@@ -191,7 +186,6 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 sm:h-20">
           
-          <!-- Logo & Event Name -->
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/20">
               <i class="fa-solid fa-wand-magic-sparkles text-slate-950 text-lg"></i>
@@ -203,22 +197,20 @@
                   工作坊專屬站
                 </span>
               </div>
-              <p class="text-xs text-slate-400 hidden sm:block">AI 導入生活科技與教學實作 · 資源與全卡片一鍵複製庫</p>
+              <p class="text-xs text-slate-400 hidden sm:block">AI 導入生活科技與教學實作 · 資源與全 138 張卡片一鍵複製庫</p>
             </div>
           </div>
 
-          <!-- Quick Navigation Actions -->
           <div class="flex items-center gap-2 sm:gap-4">
             <a href="#core-resources" class="text-xs sm:text-sm font-medium text-slate-300 hover:text-emerald-400 transition-colors hidden lg:inline-flex items-center gap-1.5">
               <i class="fa-solid fa-layer-group text-slate-500"></i>
-              核心簡報與看板
+              四大教材入口
             </a>
             <a href="#padlet-browser" class="text-xs sm:text-sm font-medium text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1.5 rounded-lg border border-emerald-500/30 transition-colors flex items-center gap-1.5">
               <i class="fa-regular fa-copy text-xs"></i>
-              <span>卡片一鍵複製區 (共 73 張)</span>
+              <span>卡片一鍵複製庫 (共 138 張)</span>
             </a>
             
-            <!-- Lock Button -->
             <button 
               onclick="handleLock()" 
               class="px-3 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-rose-400 bg-slate-900 border border-slate-800 hover:border-rose-500/30 transition-all flex items-center gap-1.5"
@@ -236,7 +228,7 @@
     <main class="flex-grow">
       
       <!-- Hero Section -->
-      <section class="relative overflow-hidden pt-10 pb-10 sm:pt-14 sm:pb-16 text-center">
+      <section class="relative overflow-hidden pt-10 pb-8 sm:pt-14 sm:pb-12 text-center">
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
@@ -247,23 +239,12 @@
 
           <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-5 leading-tight">
             點亮課堂的智慧火花<br>
-            <span class="gradient-text">AI 導入教學 × Agent 技能樹 × 教材卡片庫</span>
+            <span class="gradient-text">AI 導入教學 × 小宮燈 × Agent 技能樹</span>
           </h1>
 
-          <p class="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto mb-8 leading-relaxed font-light">
-            除提供四大主題線上教材入口與專屬 QR Code 外，本站已將 Padlet 看板內之 <strong class="text-emerald-400">73 張實作卡片、AI 提示詞與教材檔案</strong> 完整同步收錄，學員現場可直接一鍵複製至剪貼簿！
+          <p class="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto mb-6 leading-relaxed font-light">
+            匯集「做AI的主人」、「AI小宮燈生活科技生圖」、「備課運課回饋 Agent 技能樹」與「生科現場教學實作」。本站已將三大 Padlet 看板內之 <strong class="text-emerald-400">138 張實作卡片、AI 提示詞與教材檔案</strong> 完整同步收錄，手機／平板現場操作皆可一鍵複製！
           </p>
-
-          <!-- Warning / Notice Alert Box for Issue #2 -->
-          <div class="max-w-3xl mx-auto mb-8 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-left flex items-start gap-3.5">
-            <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-            </div>
-            <div class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              <span class="font-bold text-amber-300 block mb-1">研習主題網址提醒說明：</span>
-              原研習資料中之「<strong class="text-white">AI生圖生活科技應用-AI小宮燈</strong>」與「<strong class="text-white">夢N＿AI導入生活科技教學實作</strong>」使用相同之 Padlet 網址（實際為尾翼老師之生科實作看板）。若您手邊有「AI小宮燈」之獨立專屬連結，隨時可提供以協助替換更新！下方已為您將兩看板全部卡片完整展開。
-            </div>
-          </div>
 
         </div>
       </section>
@@ -276,7 +257,7 @@
               <i class="fa-solid fa-compass text-emerald-400"></i>
               四大研習核心入口
             </h2>
-            <p class="text-xs sm:text-sm text-slate-400 mt-0.5">點擊可直接開啟外部 Canva 簡報或 Padlet 原看板，亦可產生手機掃描 QR Code</p>
+            <p class="text-xs sm:text-sm text-slate-400 mt-0.5">點擊可直接開啟 Canva 簡報或 Padlet 原看板，亦可產生手機掃描 QR Code</p>
           </div>
           <button 
             onclick="copyAllLinks()" 
@@ -308,7 +289,26 @@
             </div>
           </div>
 
-          <!-- Card 2: 點亮備課、運課與回饋的Agent技能樹 -->
+          <!-- Card 2: AI生圖生活科技應用-AI小宮燈 (已更新為 qianyikeji1) -->
+          <div class="glass-card p-5 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-amber-500/40 transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30">Padlet · 65卡片</span>
+                <span class="text-[11px] text-amber-300">生圖 × 小宮燈</span>
+              </div>
+              <h3 class="font-bold text-white text-sm sm:text-base mb-2 line-clamp-2">AI生圖生活科技應用-AI小宮燈</h3>
+              <p class="text-xs text-slate-400 mb-4 line-clamp-3">包含姚老師生圖機器人、Gemini生圖範本、熱昇華手作、Prompt 四格架構與小宮燈實作。</p>
+            </div>
+            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-1.5">
+                <button onclick="openQRModal('AI生圖生活科技應用-AI小宮燈', 'https://padlet.com/qianyikeji1/1151108-n-ai-ai-s02566g3xirqh6ikvx88')" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs" title="QR Code"><i class="fa-solid fa-qrcode"></i></button>
+                <button onclick="copyLink('https://padlet.com/qianyikeji1/1151108-n-ai-ai-s02566g3xirqh6ikvx88', this)" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs" title="複製連結"><i class="fa-regular fa-copy"></i></button>
+              </div>
+              <a href="https://padlet.com/qianyikeji1/1151108-n-ai-ai-s02566g3xirqh6ikvx88" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-950 bg-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1">開啟 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 3: 點亮備課、運課與回饋的Agent技能樹 -->
           <div class="glass-card p-5 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-cyan-500/40 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -327,7 +327,7 @@
             </div>
           </div>
 
-          <!-- Card 3: 夢N＿AI導入生活科技教學實作 -->
+          <!-- Card 4: 夢N＿AI導入生活科技教學實作 -->
           <div class="glass-card p-5 rounded-2xl flex flex-col justify-between border border-slate-800 hover:border-emerald-500/40 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -346,26 +346,10 @@
             </div>
           </div>
 
-          <!-- Card 4: AI生圖生活科技應用-AI小宮燈 (待補連結標示) -->
-          <div class="glass-card p-5 rounded-2xl flex flex-col justify-between border border-dashed border-amber-500/40 hover:border-amber-400 transition-all">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <span class="text-[11px] font-semibold px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 border border-amber-500/30">主題待更新</span>
-                <span class="text-[11px] text-amber-400"><i class="fa-solid fa-link-slash"></i> 網址重疊</span>
-              </div>
-              <h3 class="font-bold text-white text-sm sm:text-base mb-2 line-clamp-2">AI生圖生活科技應用-AI小宮燈</h3>
-              <p class="text-xs text-slate-400 mb-4 line-clamp-3">原提供連結與左側實作看板重複，暫引導至尾翼老師實作專案，待專屬網址更新。</p>
-            </div>
-            <div class="pt-3 border-t border-slate-800 flex items-center justify-between gap-2">
-              <span class="text-xs text-amber-300">請提供正確連結</span>
-              <a href="https://padlet.com/fredcit/1151107_-n-ai-s025822gzxae1ezkk444" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-950 bg-amber-300 hover:bg-amber-200 transition-colors flex items-center gap-1">前往實作看板 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      <!-- Section 2: Full Padlet Cards Browser with 1-Click Copy -->
+      <!-- Section 2: Full Padlet Cards Browser with 1-Click Copy (138 Cards) -->
       <section id="padlet-browser" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         
         <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800">
@@ -375,20 +359,28 @@
             <div>
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-2">
                 <i class="fa-regular fa-copy"></i>
-                重點功能 · 每張卡片均支援一鍵複製
+                三大看板完整收錄 · 每張卡片均支援一鍵複製
               </div>
-              <h2 class="text-xl sm:text-2xl font-bold text-white">Padlet 實作卡片與提示詞資料庫</h2>
+              <h2 class="text-xl sm:text-2xl font-bold text-white">Padlet 實作卡片與提示詞資料庫（共 138 張）</h2>
               <p class="text-xs sm:text-sm text-slate-400 mt-1">
-                切換看板頁籤，即時檢視卡片詳細內容、複製完整 System Prompt 或直接下載附件
+                點選切換上方三大看板頁籤，即時檢視卡片詳細內容、複製完整 System Prompt 或直接開啟附件
               </p>
             </div>
 
-            <!-- Tab Buttons -->
+            <!-- Tab Buttons (3 Tabs) -->
             <div class="flex flex-wrap items-center gap-2 bg-slate-900/90 p-1.5 rounded-2xl border border-slate-800">
+              <button 
+                id="tabBtnLantern" 
+                onclick="switchPadletTab('lantern')" 
+                class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 bg-amber-400 text-slate-950 shadow-md"
+              >
+                <i class="fa-solid fa-lamp"></i>
+                <span>小宮燈生圖 (65)</span>
+              </button>
               <button 
                 id="tabBtnAgent" 
                 onclick="switchPadletTab('agent')" 
-                class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-emerald-500 text-slate-950 shadow-md"
+                class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-1.5"
               >
                 <i class="fa-solid fa-network-wired"></i>
                 <span>Agent 技能樹 (47)</span>
@@ -396,10 +388,10 @@
               <button 
                 id="tabBtnFredcit" 
                 onclick="switchPadletTab('fredcit')" 
-                class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-2"
+                class="px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-1.5"
               >
                 <i class="fa-solid fa-wrench"></i>
-                <span>生活科技教學實作 (26)</span>
+                <span>生科教學實作 (26)</span>
               </button>
             </div>
           </div>
@@ -427,8 +419,8 @@
 
           <!-- Cards Count Notice -->
           <div class="flex items-center justify-between text-xs text-slate-400 mb-6">
-            <span id="activeTabDescription">黃標是資料、紅標有範例、藍標歸工具、綠標要實作</span>
-            <span id="cardsCountDisplay" class="font-medium text-emerald-400">顯示 47 張卡片</span>
+            <span id="activeTabDescription">小宮燈生圖應用：姚老師生圖機器人、熱昇華手作、提示詞四格架構</span>
+            <span id="cardsCountDisplay" class="font-medium text-amber-400">顯示 65 張卡片</span>
           </div>
 
           <!-- Cards Grid -->
@@ -464,7 +456,7 @@
             id="workshopNotes" 
             oninput="saveNotes()" 
             rows="4" 
-            placeholder="點擊上方卡片的「複製卡片內容」後，可在此處貼上並組合您的專屬課堂提示詞..."
+            placeholder="點擊上方卡片的「複製卡片」後，可在此處貼上並組合您的專屬課堂提示詞..."
             class="w-full p-4 bg-slate-900/90 border border-slate-700/80 rounded-2xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm leading-relaxed"
           ></textarea>
         </div>
@@ -538,7 +530,7 @@
     <span id="toastMessage">已成功複製卡片內容！</span>
   </div>
 
-  <!-- Data Script -->
+  <!-- Unified Padlet Data Script -->
   <script src="padlet_data.js"></script>
 
   <!-- Interactive Logic -->
@@ -547,7 +539,7 @@
     const STORAGE_KEY = "hualien_dream_n_auth_token";
     const NOTES_KEY = "hualien_dream_n_notes";
 
-    let currentTab = 'agent'; // 'agent' or 'fredcit'
+    let currentTab = 'lantern'; // 'lantern', 'agent', or 'fredcit'
     let currentFilter = 'ALL';
     let qrCodeInstance = null;
 
@@ -561,13 +553,11 @@
         document.getElementById('passwordInput').focus();
       }
 
-      // Load saved notes
       const savedNotes = localStorage.getItem(NOTES_KEY);
       if (savedNotes) {
         document.getElementById('workshopNotes').value = savedNotes;
       }
 
-      // Initialize cards
       renderCurrentTab();
     });
 
@@ -642,32 +632,47 @@
       showToast("已重新上鎖");
     }
 
-    // Tab Switching
+    // Tab Switching among 3 Padlets
     function switchPadletTab(tab) {
       currentTab = tab;
       currentFilter = 'ALL';
       document.getElementById('cardSearchInput').value = '';
 
+      const btnLantern = document.getElementById('tabBtnLantern');
       const btnAgent = document.getElementById('tabBtnAgent');
       const btnFredcit = document.getElementById('tabBtnFredcit');
 
-      if (tab === 'agent') {
-        btnAgent.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-emerald-500 text-slate-950 shadow-md";
-        btnFredcit.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-2";
-        document.getElementById('activeTabDescription').innerText = "色標說明：黃標是資料、紅標有範例、藍標歸工具、綠標要實作";
+      // Reset styles
+      const defaultClass = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-1.5";
+      btnLantern.className = defaultClass;
+      btnAgent.className = defaultClass;
+      btnFredcit.className = defaultClass;
+
+      if (tab === 'lantern') {
+        btnLantern.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 bg-amber-400 text-slate-950 shadow-md";
+        document.getElementById('activeTabDescription').innerText = "AI小宮燈生活科技應用：姚老師生圖機器人、熱昇華手作、Prompt 四格架構、實作教材";
+      } else if (tab === 'agent') {
+        btnAgent.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 bg-cyan-400 text-slate-950 shadow-md";
+        document.getElementById('activeTabDescription').innerText = "Agent技能樹：黃標是資料、紅標有範例、藍標歸工具、綠標要實作";
       } else {
-        btnFredcit.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-emerald-500 text-slate-950 shadow-md";
-        btnAgent.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white transition-all flex items-center gap-2";
-        document.getElementById('activeTabDescription').innerText = "尾翼老師生科教學看板：工程助教提示詞、SCAMPER奔馳法、課本資料包";
+        btnFredcit.className = "px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 bg-emerald-400 text-slate-950 shadow-md";
+        document.getElementById('activeTabDescription').innerText = "尾翼老師生科教學實作：工程助教提示詞、SCAMPER奔馳法、電阻色環查詢、課本包";
       }
 
       renderCurrentTab();
     }
 
+    function getActiveCards() {
+      if (currentTab === 'lantern') return LANTERN_CARDS;
+      if (currentTab === 'agent') return AGENT_CARDS;
+      return FREDCIT_CARDS;
+    }
+
     function renderCurrentTab() {
-      const cards = currentTab === 'agent' ? AGENT_CARDS : FREDCIT_CARDS;
+      const cards = getActiveCards();
       renderFilterPills(cards);
       renderCards(cards);
+      document.getElementById('cardsCountDisplay').innerText = `顯示 ${cards.length} 張卡片`;
     }
 
     function renderFilterPills(cards) {
@@ -693,14 +698,14 @@
 
     function setCardFilter(cat) {
       currentFilter = cat;
-      const cards = currentTab === 'agent' ? AGENT_CARDS : FREDCIT_CARDS;
+      const cards = getActiveCards();
       renderFilterPills(cards);
       filterCardList();
     }
 
     function filterCardList() {
       const query = document.getElementById('cardSearchInput').value.toLowerCase().trim();
-      const allCards = currentTab === 'agent' ? AGENT_CARDS : FREDCIT_CARDS;
+      const allCards = getActiveCards();
 
       const filtered = allCards.filter(card => {
         const matchCategory = currentFilter === 'ALL' || card.category === currentFilter;
@@ -726,21 +731,19 @@
         return;
       }
 
-      grid.innerHTML = cards.map((c, idx) => {
-        // Tag badge color styling
+      grid.innerHTML = cards.map((c) => {
         let badgeColor = "bg-slate-800 text-slate-300 border-slate-700";
         if (c.color === 'blue' || c.category.includes('藍標')) badgeColor = "bg-blue-500/15 text-blue-300 border-blue-500/30";
         else if (c.color === 'red' || c.category.includes('紅標')) badgeColor = "bg-rose-500/15 text-rose-300 border-rose-500/30";
         else if (c.color === 'orange' || c.color === 'yellow' || c.category.includes('黃標')) badgeColor = "bg-amber-500/15 text-amber-300 border-amber-500/30";
         else if (c.color === 'green' || c.category.includes('綠標')) badgeColor = "bg-emerald-500/15 text-emerald-300 border-emerald-500/30";
+        else if (c.color === 'amber') badgeColor = "bg-amber-500/15 text-amber-300 border-amber-500/30";
 
-        // Body display
         let bodySnippet = "";
         if (c.body_html) {
           bodySnippet = `<div class="prose-content text-xs text-slate-300 line-clamp-4 leading-relaxed mb-4 bg-slate-950/50 p-2.5 rounded-xl border border-slate-800/80 font-mono select-text">${c.body_html}</div>`;
         }
 
-        // Attachment button
         let attachmentBtn = "";
         if (c.attachment_url) {
           attachmentBtn = `
@@ -777,7 +780,6 @@
             <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2 mt-auto">
               ${attachmentBtn ? `<div>${attachmentBtn}</div>` : `<span class="text-[11px] text-slate-500">卡片內容</span>`}
               
-              <!-- Copy Button for EVERY card -->
               <button 
                 onclick="copyCardText(${c.id}, this)" 
                 class="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
@@ -792,9 +794,8 @@
       }).join('');
     }
 
-    // Copy card text
     function copyCardText(id, btn) {
-      const allCards = currentTab === 'agent' ? AGENT_CARDS : FREDCIT_CARDS;
+      const allCards = getActiveCards();
       const card = allCards.find(c => c.id === id);
       if (!card) return;
 
@@ -813,7 +814,6 @@
       });
     }
 
-    // QR Code Modal
     function openQRModal(title, url) {
       const modal = document.getElementById('qrModal');
       const titleElem = document.getElementById('qrModalTitle');
@@ -858,16 +858,16 @@
     function copyAllLinks() {
       const allText = 
 `【1151108 花蓮夢N 研習教材精華清單】
-1. 做AI的主人—對齊 UNESCO 學生素養架構的國中 AI 教學方案 -楊智超
+1. 做AI的主人—對齊 UNESCO 學生素養架構的國中 AI 教學方案 - 楊智超
 https://www.canva.com/design/DAHaTsStFLQ/ehWIYcjkmNX9Pf-Q-RUjFQ/view?utm_content=DAHaTsStFLQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1c13124e96
 
-2. 點亮備課、運課與回饋的Agent技能樹 (47張卡片庫)
+2. AI生圖生活科技應用-AI小宮燈 (65張卡片庫)
+https://padlet.com/qianyikeji1/1151108-n-ai-ai-s02566g3xirqh6ikvx88
+
+3. 點亮備課、運課與回饋的Agent技能樹 (47張卡片庫)
 https://padlet.com/inforissuescounseling/agent-s0257lp043uoifoglr4r
 
-3. 夢N＿AI導入生活科技教學實作 (26張卡片庫)
-https://padlet.com/fredcit/1151107_-n-ai-s025822gzxae1ezkk444
-
-4. AI生圖生活科技應用-AI小宮燈
+4. 夢N＿AI導入生活科技教學實作 (26張卡片庫)
 https://padlet.com/fredcit/1151107_-n-ai-s025822gzxae1ezkk444`;
 
       navigator.clipboard.writeText(allText).then(() => {
@@ -875,7 +875,6 @@ https://padlet.com/fredcit/1151107_-n-ai-s025822gzxae1ezkk444`;
       });
     }
 
-    // Notes Feature
     function saveNotes() {
       const val = document.getElementById('workshopNotes').value;
       localStorage.setItem(NOTES_KEY, val);
@@ -900,7 +899,6 @@ https://padlet.com/fredcit/1151107_-n-ai-s025822gzxae1ezkk444`;
       });
     }
 
-    // Toast
     function showToast(msg) {
       const toast = document.getElementById('toast');
       const msgElem = document.getElementById('toastMessage');
